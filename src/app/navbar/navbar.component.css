@@ -1,0 +1,36 @@
+ .main-container {
+        border-radius: 5px;
+
+        border: 0.5px solid #d9d9d9;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+
+      .image-wrapper {
+        border: #d9d9d9;
+        border-radius: 5px;
+        background-color: rgba(239, 180, 42, 0.1);
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 8px 0;
+      }
+
+      .img {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 20px;
+        overflow: hidden;
+        max-width: 100%;
+      }
+
+      .title {
+        color: rgba(0, 0, 0, 0.5);
+        margin: auto 0;
+        font: 600 14px/19px Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+  

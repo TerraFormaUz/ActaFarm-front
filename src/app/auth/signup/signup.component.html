@@ -1,0 +1,54 @@
+<div class="register-section">
+    <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="text-align: center">
+                    <h4>Ro'yhatdan o'tish</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                        <div class="form-group row">
+                            <label for="email_address" class="col-md-4 col-form-label text-md-right">Elektron pochta</label>
+                            <div class="col-md-6">
+                                <input type="text" [formControlName]="'email'" id="email_address" class="form-control" name="email-address" required
+                                    autofocus>
+                                <span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">
+                                    Iltimos yaroqli email pochtangizni kiriting
+                                </span>                                    
+                            </div>
+                        </div>
+ 
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Foydalanuvchi nomi</label>
+                            <div class="col-md-6">
+                                <input type="text" [formControlName]="'username'"class="form-control" required autofocus>
+                                <span *ngIf="!signupForm.get('username').valid && signupForm.get('username').touched">
+                                    Iltimos yaroqli foydalanuvchi nomini kiriting
+                               </span>                                 
+                            </div>
+                        </div>
+ 
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                            <div class="col-md-6">
+                                <input type="password" [formControlName]="'password'" id="password" class="form-control" name="password" required>
+                                <span *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched">
+                                    Iltimos yaroqli parolni kiriting
+                                </span>  
+                            </div>
+                        </div>
+ 
+                        <span class="col-md-6 offset-md-4">
+                            <button type="submit" class="sign-up">
+                                Ro'yhatdan o'tish
+                            </button>
+                            <span style="padding-left: 15px">Akkaunt bormi? <a routerLink="/login">Kirish</a></span>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
