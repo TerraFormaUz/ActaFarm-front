@@ -16,4 +16,7 @@ export class NavbarComponent implements OnInit {
   goToResourseList() {
     this.router.navigateByUrl('/resource-list');
   }
+  goToConsultantList() {
+    this.router.navigateByUrl('/consultant-list');
+  }
 }

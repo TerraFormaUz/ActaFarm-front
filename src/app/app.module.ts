@@ -27,7 +27,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ResourceComponent } from './resource/resource.component';
-
+import { ConsultantComponent } from './consultant/consultant.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ResourceComponent } from './resource/resource.component';
     HomeComponent,
     PostTileComponent,
     VoteButtonComponent,
+    CardComponent,
     SideBarComponent,
     SubredditSideBarComponent,
     CreateSubredditComponent,
@@ -46,7 +48,9 @@ import { ResourceComponent } from './resource/resource.component';
     ListSubredditsComponent,
     ViewPostComponent,
     UserProfileComponent,
-    ResourceComponent
+    ResourceComponent,
+    ConsultantComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

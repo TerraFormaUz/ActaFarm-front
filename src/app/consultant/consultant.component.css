@@ -1,0 +1,73 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+   }
+   
+   .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+   }
+   
+   .card p {
+    margin: 0;
+   }
+
+   .card-grid{
+    display: flex;
+    justify-content: center;
+   }
+
+   button {
+    margin-top: 5px;
+    border: 0.5px solid #DEDEDE;
+    background-color: #6AB04C;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+   }
+
+   button:hover {
+    opacity: 0.7;
+   }
+
+
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
