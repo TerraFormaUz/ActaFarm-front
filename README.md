@@ -15,7 +15,7 @@ To set up and run the ActaFarm frontend on your local machine, follow these step
 
 1. **Clone the Repository**: Clone the ActaFarm frontend repository to your local machine.
     ```
-    git clone https://github.com/yourusername/actafarm-frontend.git
+    git clone https://github.com/TerraFormaUz/ActaFarm-front.git
     ```
 
 2. **Install Dependencies**: Navigate to the project directory and install the required dependencies using npm.
